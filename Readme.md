@@ -109,14 +109,15 @@ Do đó, ta thu được:
 
 ### 2.1. Thuật toán Canny.
 
-## 3. Phát hiện đường thẳng bằng Hough Transform.
+## 3. Phát hiện đường thẳng.
+### 3.1. Hough Transform.
 - "linesP = cv2.HoughLines(img_input, rho, theta, threshold, line, ) <br>
 Trong đó:
     - img_input: ảnh đầu vào.
     - rho: 
     - theta: bước nhảy góc trong không gian Hough.
     - threshold: ngưỡng (số đường thẳng tối đa đi qua 1 điểm)
-### 2.2.1. cv2.HoughLinesP()
+### 3.1.1. cv2.HoughLinesP()
 - Lưu ý là HoughLines có P, nên hàm sẽ trả về đoạn thẳng chứ không phải đường thẳng vô hạn như cv2.HoughLines().
 - Do đó, linesP[i][0] là duyệt từng cặp đoạn thứ i. Ứng với nó sẽ lấy cặp (x_i_1, y_i_1).
 
